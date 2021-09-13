@@ -11,7 +11,7 @@ function App() {
     cache: "default",
   };
   const [search, setSearch] = useState("");
-  const [url, setUrl] = useState(
+  const [url, setUrl] = useState( 
     `https://en.wikipedia.org/w/api.php?&origin=*&action=query&format=json&prop=extracts%7Cpageimages&generator=search&exchars=200&exintro=1&explaintext=1&piprop=thumbnail%7Cname&gsrsearch=${search}`
   );
   const { isLoading, isError, data } = useFetch(url, myInit);
